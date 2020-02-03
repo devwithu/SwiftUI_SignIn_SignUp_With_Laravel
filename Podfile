@@ -9,5 +9,6 @@ target 'Demo' do
 pod 'Navajo-Swift'
 pod 'IQKeyboardManagerSwift'
 pod 'Alamofire', '~> 5.0.0-rc.3'
+pod 'WaterfallGrid', '~> 0.4.0'
 
 end

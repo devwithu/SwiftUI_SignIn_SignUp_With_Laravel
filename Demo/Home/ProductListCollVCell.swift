@@ -10,42 +10,29 @@ import SwiftUI
 
 struct ProductListCollVCell: View {
     
-    var product: Product
+    var category: Category
     
     var body: some View {
-        
-        NavigationLink(destination: ProductListRedirection(product: product)) {
-            
-            VStack {
+
+        ZStack {
+                RoundedRectangle(cornerRadius: 25, style: .continuous)
+                .fill(Color.red)
+                .frame(width: 80, height: 80)
                 
-                Image(product.imageName)
-                    .resizable()
-                    .frame(width: (UIScreen.main.bounds.width * 190) / 414, height: (UIScreen.main.bounds.width * 134) / 414)
-                    .aspectRatio(contentMode: .fill)
-                
-                Text("Color Birds")
-                    .lineLimit(2)
-                    .padding([.leading, .trailing], 5)
-                    .foregroundColor(Color("TextColor"))
-                    
-                
-                Spacer()
-            }
-//            .background(Color.white)
-            .border(Color.gray)
-            .cornerRadius(10)
-            .shadow(radius: 2)
+            Text(category.title)
+                    .foregroundColor(.white)
         }
-        .buttonStyle(PlainButtonStyle())
+
+
     }
 }
 
-struct ProductListCollVCell_Previews: PreviewProvider {
-    static var previews: some View {
-        ProductListCollVCell(product: Product(name: "First Product", imageName: "bird"))
-            .previewLayout(.fixed(width: (UIScreen.main.bounds.width * 200) / 414, height: (UIScreen.main.bounds.width * 200) / 414))
-    }
-}
+//struct ProductListCollVCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProductListCollVCell(product: Product(name: "First Product", imageName: "bird"))
+//            .previewLayout(.fixed(width: (UIScreen.main.bounds.width * 200) / 414, height: (UIScreen.main.bounds.width * 200) / 414))
+//    }
+//}
 
 struct ProductListRedirection: View {
     

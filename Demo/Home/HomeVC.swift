@@ -43,16 +43,19 @@ struct HomeVC: View {
 //            HeaderCollView()
             TopView()
             
+
+
+            ProductListCollView()
+                .frame(height: ((((UIScreen.main.bounds.width * 210) / 414) * (CGFloat(self.arrProduct.count % 4 == 0 ? Int(self.arrProduct.count / 4) : Int(self.arrProduct.count / 4) + 1))) + CGFloat(Int(self.arrProduct.count / 4) * 20)))
+         
             VStack(alignment: .leading) {
-                Group {
-                    Text("Shop by Category")
-                    
-                    ProductTypeCollView()
-                }
-            }
-            
-            ProductListCollView(arrProduct: arrProduct)
-                .frame(height: ((((UIScreen.main.bounds.width * 210) / 414) * (CGFloat(self.arrProduct.count % 2 == 0 ? Int(self.arrProduct.count / 2) : Int(self.arrProduct.count / 2) + 1))) + CGFloat(Int(self.arrProduct.count / 2) * 20)))
+              Group {
+                  Text("Shop by Category")
+                  
+                  ProductTypeCollView()
+              }
+          }
+        
         }
         .edgesIgnoringSafeArea(.top)
         .listStyle(GroupedListStyle())

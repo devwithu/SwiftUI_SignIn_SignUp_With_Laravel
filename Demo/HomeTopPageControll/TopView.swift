@@ -25,7 +25,7 @@ struct TopView: View {
             PageVC(currentPageIndex: $currentPage,viewControllers: subview)
                 .frame(height: (UIScreen.main.bounds.width * 250) / 414)
             
-            PageControl(numberOfPages: subview.count, currentPageIndex: $currentPage)
+            //PageControl(numberOfPages: subview.count, currentPageIndex: $currentPage)
         }
     }
 }

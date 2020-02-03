@@ -1,5 +1,5 @@
 //
-//  Response.swift
+//  LoginResponse.swift
 //  Demo
 //
 //  Created by jdj on 2020/01/28.

@@ -2,23 +2,27 @@ PODS:
   - Alamofire (5.0.0-rc.3)
   - IQKeyboardManagerSwift (6.5.1)
   - Navajo-Swift (2.1.0)
+  - WaterfallGrid (0.4.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
   - IQKeyboardManagerSwift
   - Navajo-Swift
+  - WaterfallGrid (~> 0.4.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - IQKeyboardManagerSwift
     - Navajo-Swift
+    - WaterfallGrid
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   IQKeyboardManagerSwift: 9ac7524fad9f9fe9a3b98c927e7772471ca546d2
   Navajo-Swift: 57b93e73efbfbf452433efbff04402de56beff51
+  WaterfallGrid: 568881d69470c0ffe635732dfafd859db1365989
 
-PODFILE CHECKSUM: aed2d626d6af53be292f45abff0fc71e8c4a89b9
+PODFILE CHECKSUM: d0c6a2efb36181d50e65f706c1b793f74a16d58a
 
 COCOAPODS: 1.8.4
